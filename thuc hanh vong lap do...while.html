@@ -6,11 +6,11 @@
 </head>
 <body>
 <script>
-    let i;
-    for (i<100){
-        document.write('<hr width = ' + i + '%>');
-        i=i+1;
-    }
+    let a= null;
+    do {
+        a=+prompt('nhập giá trị ')
+    }while (a>10 || a<1);
+    alert('so vua nhap là : '+a)
 </script>
 </body>
 </html>
