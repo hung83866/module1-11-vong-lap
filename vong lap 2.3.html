@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2 id="in"></h2>
+<script>
+   const n = 5;
+   let i;
+   let j;
+   for (i=1;i<=n;i++){
+       for (j=1;j<=i;j++){
+           document.write('*')
+       }
+       document.write('<br>')
+   }
+   document.write('<br>')
+   for (i=n;i>0;i--){
+       for (j=1;j<=i;j++){
+           document.write('*')
+       }
+       document.write('<br>')
+   }
+   document.write('<br>')
+
+   for (i=1;i<=n;i++) {
+       for (let k = n;k>i;k--){
+           document.write('&nbsp;&nbsp')
+       }
+       for (j = 1; j <= i; j++) {
+           document.write('*')
+       }
+       document.write('<br>')
+   }
+   document.write('<br>')
+   for (i=n;i>0;i--) {
+       for (let k = n;k>i;k--){
+           document.write('&nbsp;&nbsp')
+       }
+       for (j = 1; j <= i; j++) {
+           document.write('*')
+       }
+       document.write('<br>')
+   }
+
+</script>
+</body>
+</html>
