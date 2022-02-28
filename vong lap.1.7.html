@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>game đoán số</title>
+</head>
+<body>
+<button onclick="batdau()">bắt đầu</button>
+<script>
+    function batdau(){
+        let a = +prompt('nhập số đầu');
+        let b = +prompt('nhập số cuối');
+        let d = Math.floor(Math.random()*b)+a;
+        console.log(d)
+        let i=1;
+        do {
+            let c = +prompt('số người chơi đoán');
+            if (c==d){
+               alert('lựa chọn chính xác');
+               break
+            }else {
+                if(c>d){
+                    alert('thấp hơn chút nữa');
+                }else {
+                    alert('cao hơn chút nữa');
+                }
+            }
+            i++;
+        }while (i<=3)
+        alert('thua cuộc');
+    }
+</script>
+</body>
+</html>
