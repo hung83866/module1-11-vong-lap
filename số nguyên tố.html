@@ -7,20 +7,23 @@
 <body>
 <script>
     let a = +prompt('nhập số lượng snt cần in ra');
-    let b = 2;
+    let b = 0;
     let j;
-    while (b<=a){
-        for ( j = 2; j < b ; j++) {
-            if (b % j == 0) {
+    let i;
+    for (i=2;b<a;i++){
+        let check = true;
+        for (j=2;j<i;j++){
+            if (i%j==0){
+                check = false;
                 break;
             }
-            else {
-                document.write(b+',')
             }
-
+        if (check){
+            b++;
+            document.write(i+',')
         }
-        b++;
-    }
+        }
+
 
 </script>
 </body>
